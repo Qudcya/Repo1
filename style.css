@@ -1,0 +1,137 @@
+.text
+{
+  color: rgb(49, 49, 49);
+  text-align: center;
+  margin-bottom: 37px;
+}
+h1
+{
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-weight: lighter;
+ position: relative;
+}
+h1::after
+{
+  content:'';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+0%{
+  width: 100px;
+}
+50%{
+  width: 200px;
+}
+100%{
+  width: 100px;
+}
+}
+.container
+{
+  width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  gap: 20px;  
+  padding: 0;
+}
+img
+{
+  height: 250px;
+  width: 262px;
+  border-radius: 10%;
+}
+.div1
+{
+  width:21%;  
+ 
+  border-radius: 0%;
+}
+.container1
+{
+  
+  height: 260px;
+  display: flex; 
+  overflow: hidden;  
+  position: relative; 
+}
+.div3
+{
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+}
+.div4 img
+{
+  background-color: white;
+  width: 190px;
+  height: 235px;
+  animation: move 8s linear infinite;
+  position: absolute;
+}
+@keyframes move
+{
+  0%{
+    left:0;
+  }
+  100%{
+    left: 100%;
+  }
+}
+h2{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-weight: lighter;
+ position: relative;
+}
+h2::after
+{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+0%{
+  width: 100px;
+}
+50%{
+  width: 200px;
+}
+100%{
+  width: 100px;
+}
+}
+h3{
+  text-align: center;
+}
+p{
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.description{
+  text-align: center;
+  padding: 8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:  rgb(49, 49, 49);
+}
+img:hover{
+  border: 3px solid black;
+}
